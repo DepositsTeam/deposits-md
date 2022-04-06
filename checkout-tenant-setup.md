@@ -7,11 +7,6 @@ The Deposits One-Click Checkout allows allows merchants to quickly enroll, onboa
 
   
 
-![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner.png)
-![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner-js.png)
-
-  
-
 ## Setup
 You have to first create an account on our console, we advise you do so on our sandbox environment first to enable you understand and play around with the SDK and APIs.
 
@@ -52,6 +47,9 @@ https://www.getpostman.com/collections/e67c7ba863f80797ba4d
 ```
 
 #### Javascript SDK Resources
+
+![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner-js.png)
+
 To use our Javascript SDK kindly go through this link.
 ```sh
 https://github.com/DepositsTeam/deposits-md/blob/master/deposits_one_click_checkout_web_sdk.md
@@ -67,6 +65,9 @@ Production
 https://api.deposits.com/example/checkout
 ```
 #### Flutter SDK Resources
+
+![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner.png)
+
 To use our Flutter SDK listed below are some links to places where the code base is hosted.
 
 Github
