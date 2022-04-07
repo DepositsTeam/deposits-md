@@ -1,9 +1,8 @@
-
 # Deposits One Click Checkout Web SDK
 
 
 
-The Deposits One-Click Checkout SDK allows allows merchants to quickly enroll, onboard, and checkout customers. We provide powerful and customizable UI screens that can be used out-of-the-box to collect payments from your users with or without a deposit account
+The Deposits One-Click Checkout SDK allows merchants to quickly enroll, onboard, and checkout customers. We provide powerful and customizable UI screens that can be used out-of-the-box to collect payments from your users with or without a deposit account
 
   
 
@@ -12,7 +11,7 @@ The Deposits One-Click Checkout SDK allows allows merchants to quickly enroll, o
   
 
 ## To Initiate A Checkout
-You have to first import out Javascript SDK however we have an example that can guide you on sandbox and production.
+You have to first import our Javascript SDK. We have created examples that can guide you on sandbox and production.
 
 #### Example
 
@@ -40,7 +39,7 @@ https://api.deposits.com/sdk/checkout.js
 <script src="https://api.deposits.com/sdk/checkout.js"></script>
 ```
 
-The Second line of code imports our SDK to your web page. With this, you can call the appropriate function to initiate the Deposits checkout flow.
+The second line of code imports our SDK to your web page. With this, you can call the appropriate function to initiate the Deposits checkout flow.
   
 
 Below is what an implementation of the `DepositsCheckout` would look like:
@@ -97,12 +96,12 @@ document.getElementById("form").addEventListener("submit", function (e) {
 )
 ```
 
-This is an event listener that lets your webpage know when to call our SDK to initiate the checkout process. This line of code tells the web page to initiate the checkout experience when the user tries to submit the form.
+This is an event listener that lets your webpage know when to call our SDK to initiate the checkout process. It tells the web page to initiate the checkout experience when the user tries to submit the form.
 
 `const email = document.getElementById("email").value;`
 `const amount = document.getElementById("amount").value;`
 
-In this line, we get the information entered by the user which are two of the required fields to initiate the one click checkout. By getting the amount and the email address of the customer, we are be able to initiate the one click checkout experience when the user tries to submit the form.
+Using the code above, we get the information entered by the user which are two of the required fields to initiate the one click checkout. When the user tries to submit the form, we can then initiate the one-click checkout experience using the amount and email address of the customer.
 
 
 
@@ -131,7 +130,7 @@ If the payment is successful, a response similar to this will be gotten:
 ```
 {
 	“data”: {
-		“amount”: “540”,
+		“amount”: “540.00”,
 		“merchant_name”: “money”,
 		“transaction_id”: “DPST_OCC_9ce705decede887e7e2534a07”
 	},
@@ -154,7 +153,7 @@ It is important to note that a redirect takes precedence over a callback. What t
 ##### Payment Failure
 If for some reason a customer’s payment fails, the modal remains open for the customer to try to make the payment again.
 
-We send an email to notify you, if and when this occurs.
+We'll send an email to notify you, when this occurs.
 
 ##### Cancelled Payments
 If the customer closes the payment modal before making payment or clicks "Cancel Payment", we'll cancel the payment session, hide the modal, and you won't be notified. If you do want to be notified, though, you can specify an onclose function. We'll call this function if the payment is cancelled.
