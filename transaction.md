@@ -19,7 +19,7 @@ https://api.deposits.com/api/v1/
 4. For the purpose of this test lets use the sandbox URL
 
   
-#### Transaction states
+#### Transaction status
 1. pending: transaction amount has not been credited to a user 
 2. active: transaction has been credited to user but pending an internal action
 3. refunded: transaction was refunded to sender
