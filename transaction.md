@@ -30,7 +30,7 @@ https://api.deposits.com/api/v1/
 ```sh
 {
 	user_id:963
-	api_key:cafecito-user
+	api_key:tenent-user
 }
 ```
 ##### Response
@@ -68,7 +68,7 @@ https://api.deposits.com/api/v1/
 ```sh
 {
 	user_id:963
-	api_key:cafecito-user
+	api_key:tenent-user
 }
 ```
 ##### Response
