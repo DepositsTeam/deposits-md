@@ -19,6 +19,13 @@ https://api.deposits.com/api/v1/
 4. For the purpose of this test lets use the sandbox URL
 
   
+#### Transaction states
+1. pending: transaction amount has not been credited to a user 
+2. active: transaction has been credited to user but pending an internal action
+3. refunded: transaction was refunded to sender
+4. cancelled: transaction was never credited to receiver but was cancelled before it was sent
+5. completed: transaction has been credited and all internal actions completed
+6. deactive: transaction was deleted
 
 #### fetch transaction
 ##### Endpoint
@@ -31,7 +38,7 @@ https://api.deposits.com/api/v1/
 ```sh
 {
 	user_id:963
-	api_key:tenent-user
+	api_key:cafecito-user
 }
 ```
 ##### Response
@@ -69,7 +76,7 @@ https://api.deposits.com/api/v1/
 ```sh
 {
 	user_id:963
-	api_key:tenent-user
+	api_key:cafecito-user
 }
 ```
 ##### Response
