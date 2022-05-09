@@ -1,9 +1,10 @@
+
 # Deposits One Click Checkout Web SDK Update
 
 ##### New Fields
-`reference` optional but should be unique  each time and minimum length is 15 chars
-`business_public_key` optional and it should be the business whom this transaction should be credited to and ensure it belongs to a business and correct.
-`theme_color` optional and it should be the the hex color code of your business. 
+1. `reference` optional but should be unique  each time and minimum length is 15 chars
+2. `business_public_key` optional and it should be the business whom this transaction should be credited to and ensure it belongs to a business and correct.
+3. `theme_color` optional and it should be the the hex color code of your business. 
 
 Below is what an implementation of the new `DepositsCheckout` would look like:
 
