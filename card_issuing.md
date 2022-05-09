@@ -121,41 +121,6 @@ This endpoint retrieves all the user’s virtual cards.
                 "token": "b2603dcd-f565-44e4-8600-171708c4a340",
                 "type": "UNLOCKED"
             }
-        },
-        {
-            "id": 4,
-            "user_id": "3",
-            "card_issuer": "privacy",
-            "card_token": "f982d066-0ee0-4b4e-b974-119ddb98270d",
-            "card_obj": "{\"created\":\"2021-05-30T21:26:42Z\",\"cvv\":\"523\",\"exp_month\":\"05\",\"exp_year\":\"2027\",\"funding\":{\"account_name\":\"Lina swe\",\"created\":\"2021-05-13 13:49:27\",\"last_four\":\"4454\",\"nickname\":\"\",\"state\":\"ENABLED\",\"token\":\"6d07a118-e515-422d-9bbf-361cfda44489\",\"type\":\"DEPOSITORY_CHECKING\"},\"hostname\":\"\",\"last_four\":\"8631\",\"memo\":\"Swys Demo card\",\"pan\":\"4111111630018631\",\"spend_limit\":0,\"spend_limit_duration\":\"TRANSACTION\",\"state\":\"OPEN\",\"token\":\"f982d066-0ee0-4b4e-b974-119ddb98270d\",\"type\":\"UNLOCKED\"}",
-            "status": "active",
-            "created_at": "2021-05-30T21:26:42.000000Z",
-            "updated_at": "2021-05-30T21:26:42.000000Z",
-            "card_obj_json": {
-                "created": "2021-05-30T21:26:42Z",
-                "cvv": "523",
-                "exp_month": "05",
-                "exp_year": "2027",
-                "funding": {
-                    "account_name": "Lina swe",
-                    "created": "2021-05-13 13:49:27",
-                    "last_four": "4454",
-                    "nickname": "",
-                    "state": "ENABLED",
-                    "token": "6d07a118-e515-422d-9bbf-361cfda44489",
-                    "type": "DEPOSITORY_CHECKING"
-                },
-                "hostname": "",
-                "last_four": "8631",
-                "memo": "Swys Demo card",
-                "pan": "4111111630018631",
-                "spend_limit": 0,
-                "spend_limit_duration": "TRANSACTION",
-                "state": "OPEN",
-                "token": "f982d066-0ee0-4b4e-b974-119ddb98270d",
-                "type": "UNLOCKED"
-            }
-        }
     ]
 }
 ```
