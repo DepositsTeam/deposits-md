@@ -7,6 +7,7 @@ Please note that;
 2. The endpoints needs the api_key and user_id as part of the request body.
 3. `{card_id}` is sent as the last segment of the URL.
 4. For the purpose of this test lets use the sandbox URL.
+5. The `BaseURL` is the url that gives access to our APIs.
 
 
 ## Create a card
