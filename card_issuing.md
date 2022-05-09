@@ -144,9 +144,44 @@ This endpoint retrieves a user’s virtual card using it’s id.
 #### Response
 ```
 {
-    "status": "warning",
-    "message": "User card not found",
-    "data": []
+    "status": "success",
+    "message": "User card",
+    "data": [
+        {
+            "id": 4,
+            "user_id": "3",
+            "card_issuer": "privacy",
+            "card_token": "b2603dcd-f565-44e4-8600-171708c4a340",
+            "card_obj": "{\"created\":\"2021-04-29T16:03:31Z\",\"cvv\":\"684\",\"exp_month\":\"04\",\"exp_year\":\"2027\",\"funding\":{\"account_name\":\"Lina swe\",\"bankAccountID\":\"2266\",\"created\":\"2021-04-25 03:01:22\",\"last_four\":\"4454\",\"nickname\":\"\",\"state\":\"ENABLED\",\"token\":\"03eac644-1ab2-478b-b85b-51ee427cce78\",\"type\":\"DEPOSITORY_CHECKING\"},\"hostname\":\"\",\"last_four\":\"1052\",\"memo\":\"Swys Demo card\",\"pan\":\"4111111232401052\",\"spend_limit\":0,\"spend_limit_duration\":\"TRANSACTION\",\"state\":\"OPEN\",\"token\":\"b2603dcd-f565-44e4-8600-171708c4a340\",\"type\":\"UNLOCKED\"}",
+            "status": "active",
+            "created_at": "2021-04-29T16:03:31.000000Z",
+            "updated_at": "2021-04-29T16:03:31.000000Z",
+            "card_obj_json": {
+                "created": "2021-04-29T16:03:31Z",
+                "cvv": "684",
+                "exp_month": "04",
+                "exp_year": "2027",
+                "funding": {
+                    "account_name": "Lina swe",
+                    "bankAccountID": "2266",
+                    "created": "2021-04-25 03:01:22",
+                    "last_four": "4454",
+                    "nickname": "",
+                    "state": "ENABLED",
+                    "token": "03eac644-1ab2-478b-b85b-51ee427cce78",
+                    "type": "DEPOSITORY_CHECKING"
+                },
+                "hostname": "",
+                "last_four": "1052",
+                "memo": "Swys Demo card",
+                "pan": "4111111232401052",
+                "spend_limit": 0,
+                "spend_limit_duration": "TRANSACTION",
+                "state": "OPEN",
+                "token": "b2603dcd-f565-44e4-8600-171708c4a340",
+                "type": "UNLOCKED"
+            }
+    ]
 }
 ```
 
