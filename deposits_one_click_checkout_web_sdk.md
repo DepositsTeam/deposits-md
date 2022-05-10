@@ -11,7 +11,7 @@ The Deposits One-Click Checkout SDK allows merchants to quickly enroll, onboard,
   
 
 ## To Initiate A Checkout
-You have to first import our Javascript SDK. We have created examples that can guide you on sandbox and production.
+You have to first import our Javascript SDK. We have created examples that can guide you on sandbox and production. We have a normal setup where we generate a reference and credit the funds to the Master/Tenant wallet, a setup where you can send a unique reference to us and we use that as the reference for the transaction and then a case where you have your own merchants and would want them to receive the funds, your merchants will be created as businesses on our end.
 
 #### Example
 
@@ -19,9 +19,21 @@ Example in sandbox
 ```sh
 https://api.deposits.dev/example/checkout
 ```
+```sh
+https://api.deposits.dev/example/checkout-reference
+```
+```sh
+https://api.deposits.dev/example/checkout-reference-business
+```
 Example in production
 ```sh
 https://api.deposits.com/example/checkout
+```
+```sh
+https://api.deposits.com/example/checkout-reference
+```
+```sh
+https://api.deposits.com/example/checkout-reference-business
 ```
 
 #### How to use

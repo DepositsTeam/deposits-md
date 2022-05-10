@@ -55,14 +55,26 @@ To use our Javascript SDK kindly go through this link.
 https://github.com/DepositsTeam/deposits-md/blob/master/deposits_one_click_checkout_web_sdk.md
 ```
 
-Below are links to our example implementation of the JS SDK on the web.
+Below are links to our example implementation of the JS SDK on the web. We have a normal setup where we generate a reference and credit the funds to the Master/Tenant wallet, a setup where you can send a unique reference to us and we use that as the reference for the transaction and then a case where you have your own merchants and would want them to receive the funds, your merchants will be created as businesses on our end.
 Sandbox
 ```sh
 https://api.deposits.dev/example/checkout
 ```
+```sh
+https://api.deposits.dev/example/checkout-reference
+```
+```sh
+https://api.deposits.dev/example/checkout-reference-business
+```
 Production
 ```sh
 https://api.deposits.com/example/checkout
+```
+```sh
+https://api.deposits.com/example/checkout-reference
+```
+```sh
+https://api.deposits.com/example/checkout-reference-business
 ```
 #### Flutter SDK Resources
 
