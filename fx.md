@@ -1,5 +1,5 @@
 # Foreign Exchange
-Every tenant has to enable the USD FX wallet on the console, you either do this while creating a new Tenant or Update the tenant on the Info screen.
+Every tenant has to enable the USD FX wallet on the console, you either do this while creating a new Tenant or Update the tenant on the Info page.
 
 These endpoints allow you to create and manage cards.
 
