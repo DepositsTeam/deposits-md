@@ -1,7 +1,7 @@
 # Foreign Exchange
 Every tenant has to enable the USD FX wallet on the console, you either do this while creating a new Tenant or Update the tenant on the Info page.
 
-These endpoints allow you to create and manage cards.
+These endpoints allow you to enroll for FX, create and manage wire accounts, create and manage transfers.
 
 Please note that;
 1. Each of the endpoint below is a `POST` request.
