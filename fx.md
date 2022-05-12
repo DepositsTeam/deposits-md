@@ -18,7 +18,9 @@ Please note that;
 This endpoint gets the exchange rate for specified currencies.               
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/get-rate
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -46,7 +48,9 @@ This endpoint gets the exchange rate for specified currencies.
 This endpoint permits a user to perform foreign exchange transactions.               
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/enroll-user-for-fx
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -74,7 +78,9 @@ This endpoint permits a user to perform foreign exchange transactions.
 This endpoint retrieves the balance of the user's wallets.
 
 ##### Endpoint
+```
 {{BaseURL}}/api/v1/user/fx/get-wallets
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -101,7 +107,9 @@ This endpoint retrieves the balance of the user's wallets.
 This endpoint retrieves the details the user can use to fund the wallet.
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/get-wallet-funding-info
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -137,7 +145,9 @@ This endpoint retrieves the details the user can use to fund the wallet.
 This endpoint saves a wire account for transactions.               
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/save-wire-account
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -170,7 +180,9 @@ This endpoint saves a wire account for transactions.
 This endpoint retrieves all the wire accounts saved by the user.
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/get-wire-accounts
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -230,7 +242,9 @@ This endpoint retrieves all the wire accounts saved by the user.
 This endpoint creates a wire transfer.
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/create-transfer
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -286,7 +300,9 @@ This endpoint creates a wire transfer.
 This endpoint retrieves the exchange rate at which a wire transfer was made.
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/get-transfer-rate/{transfer_id}
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -313,7 +329,9 @@ This endpoint retrieves the exchange rate at which a wire transfer was made.
 This endpoint authorizes a wire transfer.
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/authorize-transfer/{transfer_id}
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
@@ -365,7 +383,9 @@ This endpoint authorizes a wire transfer.
 This endpoint retrieves all the wire transfers performed by a user.
 
 ##### Endpoint
+```
 {{BaseURL}}/user/fx/get-transfers
+```
 
 ##### Parameters
 |Parameters |Type |Description |Required
