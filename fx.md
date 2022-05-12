@@ -293,7 +293,7 @@ This endpoint retrieves the exchange rate at which a wire transfer was made.
 --- | --- | ---| ---|
 |api_key|String|A unique identifier used to authorize access to your project.|True
 |user_id|Integer|The user_id of the current user.|True
-|transfer_id|Integer|The id attached to the wire transfer.|True
+|transfer_id|String|The id attached to the wire transfer.|True
 
 ##### Response
 ```
@@ -320,7 +320,7 @@ This endpoint authorizes a wire transfer.
 --- | --- | ---| ---|
 |api_key|String|A unique identifier used to authorize access to your project.|True
 |user_id|Integer|The user_id of the current user.|True
-|transfer_id|Integer|The id attached to the wire transfer.|True
+|transfer_id|String|The id attached to the wire transfer.|True
 
 ##### Response
 ```
@@ -382,87 +382,67 @@ This endpoint retrieves all the wire transfers performed by a user.
         "current_page": 1,
         "data": [
             {
-                "id": "370",
-                "email": "calmpress+four-cafe@gmail.com",
-                "amount": "1.00",
-                "currency": "usd",
-                "transaction_id": "7eeb4209044e5e8",
-                "reference": null,
+                "id": 575,
+                "email": "calmpress+nine-cafe@gmail.com",
+                "from_currency": "USD",
+                "to_currency": "GBP",
+                "amount": "1",
                 "description": "for school fees",
+                "transaction_id": "a0ae6752ed324c4",
+                "reference": "22b14d2b-c3e7-4268-abe3-e04f8397000d",
                 "account": {
-                    "id": 69,
-                    "user_id": "370",
-                    "email": "calmpress+four-cafe@gmail.com",
+                    "id": 73,
                     "type": "wire",
+                    "bank": "GNS Bank",
                     "account_name": "Jina niko",
-                    "account_number": null,
-                    "currency": null,
-                    "zip": "23233",
+                    "iban": "00000003",
+                    "swift": "CITIUS12",
+                    "routing_number": "113596002",
+                    "postal_code": "23233",
+                    "address1": "kojo close st dan avenue",
                     "city": "Bridge city",
                     "state": "Ohio",
                     "country": "US",
-                    "iban": "00000002",
-                    "swift": "CITIUS12",
-                    "address": "kojo close st dan avenue",
-                    "routing_number": "113596002",
-                    "tax_id": null,
-                    "coin_address": null,
-                    "bank": "GNS Bank",
                     "account_type": null,
-                    "sec": null,
-                    "status": "pending",
-                    "created_at": "2022-05-07T17:23:57.000000Z",
-                    "updated_at": "2022-05-07T17:23:57.000000Z",
-                    "privacy_token": null,
-                    "account_limit": 0,
-                    "daily_limit": 0,
-                    "monthly_limit": 0
+                    "created_at": "2022-05-12T10:34:58.000000Z",
+                    "updated_at": "2022-05-12T10:34:58.000000Z"
                 },
-                "status": "pending",
-                "created_at": "2022-05-07T21:43:32.000000Z",
-                "updated_at": "2022-05-07T21:43:32.000000Z"
+                "status": "active",
+                "created_at": "2022-05-12T12:54:58.000000Z",
+                "updated_at": "2022-05-12T12:56:03.000000Z"
             },
             {
-                "id": "370",
-                "email": "calmpress+four-cafe@gmail.com",
-                "amount": "1.00",
-                "currency": "usd",
-                "transaction_id": "8372d8b6eeea556",
-                "reference": null,
+                "id": 574,
+                "email": "calmpress+nine-cafe@gmail.com",
+                "from_currency": "USD",
+                "to_currency": null,
+                "amount": "1",
                 "description": "for school fees",
+                "transaction_id": "0ec84ea28dee495",
+                "reference": "f938d511-f20d-4681-91c0-2492ccf4732f",
                 "account": {
-                    "id": 69,
-                    "user_id": "370",
-                    "email": "calmpress+four-cafe@gmail.com",
+                    "id": 73,
                     "type": "wire",
+                    "bank": "GNS Bank",
                     "account_name": "Jina niko",
-                    "account_number": null,
-                    "currency": null,
-                    "zip": "23233",
+                    "iban": "00000003",
+                    "swift": "CITIUS12",
+                    "routing_number": "113596002",
+                    "postal_code": "23233",
+                    "address1": "kojo close st dan avenue",
                     "city": "Bridge city",
                     "state": "Ohio",
                     "country": "US",
-                    "iban": "00000002",
-                    "swift": "CITIUS12",
-                    "address": "kojo close st dan avenue",
-                    "routing_number": "113596002",
-                    "tax_id": null,
-                    "coin_address": null,
-                    "bank": "GNS Bank",
                     "account_type": null,
-                    "sec": null,
-                    "status": "pending",
-                    "created_at": "2022-05-07T17:23:57.000000Z",
-                    "updated_at": "2022-05-07T17:23:57.000000Z",
-                    "privacy_token": null,
-                    "account_limit": 0,
-                    "daily_limit": 0,
-                    "monthly_limit": 0
+                    "created_at": "2022-05-12T10:34:58.000000Z",
+                    "updated_at": "2022-05-12T10:34:58.000000Z"
                 },
-                "status": "pending",
-                "created_at": "2022-05-07T21:43:16.000000Z",
-                "updated_at": "2022-05-07T21:43:16.000000Z"
+                "status": "completed",
+                "created_at": "2022-05-12T12:54:20.000000Z",
+                "updated_at": "2022-05-12T12:54:22.000000Z"
             }
         ]
     }
 }
+```
+
