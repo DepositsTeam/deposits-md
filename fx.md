@@ -154,7 +154,7 @@ This endpoint saves a wire account for transactions.
 --- | --- | ---| ---|
 |api_key|String|A unique identifier used to authorize access to your project.|True
 |user_id|Integer|The user_id of the current user.|True
-|swift|Integer|Swift code of the bank.|True
+|swift|String|Swift code of the bank.|True
 |iban|String|IBAN code provided by the user.|True
 |bank_name|String|Name of bank provided by the user.|True
 |account_name|String|Account name at the specified bank.|True
