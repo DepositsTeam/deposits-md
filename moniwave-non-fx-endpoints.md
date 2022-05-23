@@ -1,13 +1,13 @@
 ## Non FX Endpoints
 
 Please note that;
+
 1. Each of the endpoint below is a `POST` request.
 2. The endpoints needs the `api_key` and `user_id` as part of the request body.
 3. `{transfer_id}` is sent as the last segment of the URL.
 4. The `BaseURL` is the url that gives access to our APIs.
 
-
-Deposits Base  URL in sandbox
+Deposits Base URL in sandbox
 
 ```sh
 https://api.deposits.dev/api/v1/
@@ -34,10 +34,12 @@ This endpoint is used to transfer funds(usd) from one user to another within the
 ##### Parameters
 
 ```
-user_id:343
+{
+    user_id:343
 api_key:cafecito-user
 receiver_id:375
 amount:1.1
+}
 ```
 
 ##### Response
@@ -71,10 +73,12 @@ This endpoint debits a user and credits the funds to the Master wallet(Funding A
 ##### Parameters
 
 ```
-user_id:343
+{
+    user_id:343
 api_key:cafecito-user
 amount:1.1
 description:wired out
+}
 ```
 
 ##### Response
@@ -108,10 +112,12 @@ This endpoint credits a user and debits the Master wallet(Funding Account).
 ##### Parameters
 
 ```
+{
 user_id:343
 api_key:cafecito-user
 amount:1.1
 description:wired in
+}
 ```
 
 ##### Response
@@ -145,8 +151,10 @@ This endpoint retrieves the withdrawals/transfers of a user both ACH and Wire.
 ##### Parameters
 
 ```
+{
 user_id:343
 api_key:cafecito-user
+}
 ```
 
 ##### Response
@@ -278,10 +286,12 @@ This endpoint allows a user withdraw funds to either an ACH/Wire bank account.
 ##### Parameters
 
 ```
+{
 api_key:cafecito-user
 user_id:343
 amount:1.2
 account_id:25
+}
 ```
 
 ##### Response
@@ -347,8 +357,10 @@ This endpoint retrieves all the ACH accounts saved by the user.
 ##### Parameters
 
 ```
+{
 user_id:343
 api_key:cafecito-user
+}
 ```
 
 ##### Response
@@ -453,6 +465,7 @@ This endpoint adds an ACH bank account for a user.
 ##### Parameters
 
 ```
+{
 user_id:963
 api_key:cafecito-user
 routing_number:101112842
@@ -460,6 +473,7 @@ account_number:353014201995580
 account_name:Jina niko
 bank_name:GNS Bank
 account_type:checking
+}
 ```
 
 ##### Response
@@ -513,6 +527,7 @@ This endpoint retrieves the exchange rate at which a wire transfer was made.
 ##### Parameters
 
 ```
+{
 user_id:963
 api_key:cafecito-user
 routing_number:101112842
@@ -520,6 +535,7 @@ account_number:353014201995580
 account_name:Jina nikon
 bank_name:GNS Bank
 account_type:checking
+}
 ```
 
 ##### Response
@@ -573,8 +589,10 @@ This endpoint deletes a bank account.
 ##### Parameters
 
 ```
+{
 user_id:963
 api_key:cafecito-user
+}
 ```
 
 ##### Response
@@ -608,10 +626,12 @@ This endpoint verifies a bank account via micro deposits, some funds was sent to
 ##### Parameters
 
 ```
+{
 user_id:963
 api_key:cafecito-user
 deposit_one:1
 deposit_two:1
+}
 ```
 
 ##### Response
