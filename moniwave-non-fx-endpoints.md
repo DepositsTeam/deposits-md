@@ -6,13 +6,18 @@ Please note that;
 3. `{transfer_id}` is sent as the last segment of the URL.
 4. The `BaseURL` is the url that gives access to our APIs.
 
-| Environment | Console URL | Base URLs |
 
-| --- | --- | --- |
+Deposits Base  URL in sandbox
 
-| Sandbox | https://console.deposits.dev/client-admin/login | https://api.deposits.dev/api/v1/ |
+```sh
+https://api.deposits.dev/api/v1/
+```
 
-| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v1/ |
+Deposits Base URL in production
+
+```sh
+https://api.deposits.com/api/v1/
+```
 
 ## transfer funds
 
@@ -28,17 +33,12 @@ This endpoint is used to transfer funds(usd) from one user to another within the
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
-
-|receiver_id|String|id of the receiver.|True
-
-|amount|String|The amount to be transfered.|True
+```
+user_id:343
+api_key:cafecito-user
+receiver_id:375
+amount:1.1
+```
 
 ##### Response
 
@@ -70,17 +70,12 @@ This endpoint debits a user and credits the funds to the Master wallet(Funding A
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
-
-|amount|String| |True
-
-|description|String| |True
+```
+user_id:343
+api_key:cafecito-user
+amount:1.1
+description:wired out
+```
 
 ##### Response
 
@@ -112,17 +107,12 @@ This endpoint credits a user and debits the Master wallet(Funding Account).
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
-
-|amount|String| |True
-
-|description|String| |True
+```
+user_id:343
+api_key:cafecito-user
+amount:1.1
+description:wired in
+```
 
 ##### Response
 
@@ -154,13 +144,10 @@ This endpoint retrieves the withdrawals/transfers of a user both ACH and Wire.
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
+```
+user_id:343
+api_key:cafecito-user
+```
 
 ##### Response
 
@@ -290,17 +277,12 @@ This endpoint allows a user withdraw funds to either an ACH/Wire bank account.
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
-
-|amount|String|Swift code of the bank.|True
-
-|account_id|String||True
+```
+api_key:cafecito-user
+user_id:343
+amount:1.2
+account_id:25
+```
 
 ##### Response
 
@@ -364,13 +346,10 @@ This endpoint retrieves all the ACH accounts saved by the user.
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
+```
+user_id:343
+api_key:cafecito-user
+```
 
 ##### Response
 
@@ -473,23 +452,15 @@ This endpoint adds an ACH bank account for a user.
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|String|The user_id of the current user.|True
-
-|routing_number|String||True
-
-|account_number|String||True
-
-|account_name|String||True
-
-|bank_name|String||True
-
-|account_type|String|checking, savings|True
+```
+user_id:963
+api_key:cafecito-user
+routing_number:101112842
+account_number:353014201995580
+account_name:Jina niko
+bank_name:GNS Bank
+account_type:checking
+```
 
 ##### Response
 
@@ -541,23 +512,15 @@ This endpoint retrieves the exchange rate at which a wire transfer was made.
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
-
-|routing_number|String||True
-
-|account_number|String||True
-
-|account_name|String||True
-
-|bank_name|String||True
-
-|account_type|String|checking, savings|True
+```
+user_id:963
+api_key:cafecito-user
+routing_number:101112842
+account_number:353014201995580
+account_name:Jina nikon
+bank_name:GNS Bank
+account_type:checking
+```
 
 ##### Response
 
@@ -609,13 +572,10 @@ This endpoint deletes a bank account.
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
+```
+user_id:963
+api_key:cafecito-user
+```
 
 ##### Response
 
@@ -641,19 +601,18 @@ This endpoint verifies a bank account via micro deposits, some funds was sent to
 
 ```
 
-{{BaseURL}}/user/verify-bank-account/919
+{{BaseURL}}/user/verify-bank-account/{account_id}
 
 ```
 
 ##### Parameters
 
-|Parameters |Type |Description |Required
-
---- | --- | ---| ---|
-
-|api_key|String|A unique identifier used to authorize access to your project.|True
-
-|user_id|Integer|The user_id of the current user.|True
+```
+user_id:963
+api_key:cafecito-user
+deposit_one:1
+deposit_two:1
+```
 
 ##### Response
 
