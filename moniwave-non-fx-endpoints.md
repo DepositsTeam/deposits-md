@@ -36,9 +36,9 @@ This endpoint is used to transfer funds(usd) from one user to another within the
 ```
 {
     user_id:343
-api_key:cafecito-user
-receiver_id:375
-amount:1.1
+    api_key:cafecito-user
+    receiver_id:375
+    amount:1.1
 }
 ```
 
@@ -75,9 +75,9 @@ This endpoint debits a user and credits the funds to the Master wallet(Funding A
 ```
 {
     user_id:343
-api_key:cafecito-user
-amount:1.1
-description:wired out
+    api_key:cafecito-user
+    amount:1.1
+    description:wired out
 }
 ```
 
@@ -113,10 +113,10 @@ This endpoint credits a user and debits the Master wallet(Funding Account).
 
 ```
 {
-user_id:343
-api_key:cafecito-user
-amount:1.1
-description:wired in
+    user_id:343
+    api_key:cafecito-user
+    amount:1.1
+    description:wired in
 }
 ```
 
@@ -152,8 +152,8 @@ This endpoint retrieves the withdrawals/transfers of a user both ACH and Wire.
 
 ```
 {
-user_id:343
-api_key:cafecito-user
+    user_id:343
+    api_key:cafecito-user
 }
 ```
 
@@ -287,10 +287,10 @@ This endpoint allows a user withdraw funds to either an ACH/Wire bank account.
 
 ```
 {
-api_key:cafecito-user
-user_id:343
-amount:1.2
-account_id:25
+    api_key:cafecito-user
+    user_id:343
+    amount:1.2
+    account_id:25
 }
 ```
 
@@ -358,8 +358,8 @@ This endpoint retrieves all the ACH accounts saved by the user.
 
 ```
 {
-user_id:343
-api_key:cafecito-user
+    user_id:343
+    api_key:cafecito-user
 }
 ```
 
@@ -466,13 +466,13 @@ This endpoint adds an ACH bank account for a user.
 
 ```
 {
-user_id:963
-api_key:cafecito-user
-routing_number:101112842
-account_number:353014201995580
-account_name:Jina niko
-bank_name:GNS Bank
-account_type:checking
+    user_id:963
+    api_key:cafecito-user
+    routing_number:101112842
+    account_number:353014201995580
+    account_name:Jina niko
+    bank_name:GNS Bank
+    account_type:checking
 }
 ```
 
@@ -528,13 +528,13 @@ This endpoint retrieves the exchange rate at which a wire transfer was made.
 
 ```
 {
-user_id:963
-api_key:cafecito-user
-routing_number:101112842
-account_number:353014201995580
-account_name:Jina nikon
-bank_name:GNS Bank
-account_type:checking
+    user_id:963
+    api_key:cafecito-user
+    routing_number:101112842
+    account_number:353014201995580
+    account_name:Jina nikon
+    bank_name:GNS Bank
+    account_type:checking
 }
 ```
 
@@ -590,8 +590,8 @@ This endpoint deletes a bank account.
 
 ```
 {
-user_id:963
-api_key:cafecito-user
+    user_id:963
+    api_key:cafecito-user
 }
 ```
 
@@ -627,10 +627,10 @@ This endpoint verifies a bank account via micro deposits, some funds was sent to
 
 ```
 {
-user_id:963
-api_key:cafecito-user
-deposit_one:1
-deposit_two:1
+    user_id:963
+    api_key:cafecito-user
+    deposit_one:1
+    deposit_two:1
 }
 ```
 
