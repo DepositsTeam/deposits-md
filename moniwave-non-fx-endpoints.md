@@ -4,7 +4,7 @@ Please note that;
 
 1. Each of the endpoint below is a `POST` request.
 2. The endpoints needs the `api_key` and `user_id` as part of the request body.
-3. `{transfer_id}` is sent as the last segment of the URL.
+3. `{account_id}` is sent as the last segment of the URL.
 4. The `BaseURL` is the url that gives access to our APIs.
 
 Deposits Base URL in sandbox
