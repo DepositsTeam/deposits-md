@@ -10,13 +10,13 @@ Please note that;
 Deposits Base URL in sandbox
 
 ```sh
-https://api.deposits.dev/api/v1/
+https://api.deposits.dev/api/v2/
 ```
 
 Deposits Base URL in production
 
 ```sh
-https://api.deposits.com/api/v1/
+https://api.deposits.com/api/v2/
 ```
 
 ## transfer funds

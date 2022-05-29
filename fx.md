@@ -11,8 +11,8 @@ Please note that;
 
 | Environment | Console URL | Base URLs |
 | --- | --- | --- |
-| Sandbox | https://console.deposits.dev/client-admin/login | https://api.deposits.dev/api/v1/ |
-| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v1/ |
+| Sandbox | https://console.deposits.dev/client-admin/login | https://api.deposits.dev/api/v2/ |
+| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v2/ |
 
 
 
@@ -81,7 +81,7 @@ This endpoint retrieves the balance of the user's wallets.
 
 ##### Endpoint
 ```
-{{BaseURL}}/api/v1/user/fx/get-wallets
+{{BaseURL}}/api/v2/user/fx/get-wallets
 ```
 
 ##### Parameters
