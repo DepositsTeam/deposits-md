@@ -51,7 +51,7 @@ This endpoint permits a user to perform foreign exchange transactions.
 
 ##### Endpoint
 ```
-{{BaseURL}}/user/fx/enroll-user-for-fx
+{{BaseURL}}/user/fx/enroll-for-fx
 ```
 
 ##### Parameters
