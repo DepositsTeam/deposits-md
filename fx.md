@@ -124,21 +124,25 @@ This endpoint retrieves the details the user can use to fund the wallet.
 {
     "status": "success",
     "message": "User FX wallet funding instruction",
-    "data": [
-        {
-            "type": "transfer_only",
-            "currency": null,
-            "bank_name": null,
-            "bank_address1": null,
-            "bank_city": null,
-            "bank_state_province_region": null,
-            "bank_postal_code": null,
-            "bank_country": null,
-            "account_number": null,
-            "routing_code": null,
-            "swift_bic": null
+    "data": {
+        "ach": {
+            "account_name": "",
+            "account_number": "",
+            "bank_name": "",
+            "routing_number": "",
+            "description": "515-503-457"
+        },
+        "wire": {
+            "account_name": "",
+            "account_number": "",
+            "bank_branch": "",
+            "bank_name": "",
+            "iban": "",
+            "swift": "",
+            "routing_number": "",
+            "description": "515-503-457"
         }
-    ]
+    }
 }
 ```
 
