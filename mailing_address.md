@@ -10,8 +10,8 @@ Please note that;
 
 | Environment | Console URL | Base URLs |
 | --- | --- | --- |
-| Sandbox | https://console.deposits.dev/client-admin/login | https://api.deposits.dev/api/v1/ |
-| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v1/ |
+| Sandbox | https://console.deposits.dev/client-admin/login | https://api.deposits.dev/api/v2/ |
+| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v2/ |
 
 
 ## Add an address
@@ -40,11 +40,11 @@ This endpoint creates a mailing address.
     "message": "address created",
     "data": {
         "user_id": 356,
-        "zip": "34003",
+        "postal_code": "34003",
         "country": "USA",
         "state": "Texas",
         "city": "Dallas",
-        "address": "20 town avenue",
+        "address_1": "20 town avenue",
         "is_default": "false",
         "status": "active",
         "updated_at": "2022-02-23T17:26:00.000000Z",
@@ -84,11 +84,11 @@ This endpoint updates the details of a mailing address.
     "data": {
         "id": 3,
         "user_id": "356",
-        "zip": "340030",
+        "postal_code": "340030",
         "country": "USA",
         "state": "Texas",
         "city": "Dallas",
-        "address": "20 town avenue town",
+        "address_1": "20 town avenue town",
         "is_default": "false",
         "status": "active",
         "deleted_at": null,
@@ -123,11 +123,11 @@ This endpoint returns all the mailing addresses owned by a user.
         {
             "id": 1,
             "user_id": "356",
-            "zip": "500909",
+            "postal_code": "500909",
             "country": "Nigeria",
             "state": "Lagos",
             "city": "Lagos",
-            "address": "okene avenue",
+            "address_1": "okene avenue",
             "is_default": "true",
             "status": "active",
             "deleted_at": null,
@@ -137,11 +137,11 @@ This endpoint returns all the mailing addresses owned by a user.
         {
             "id": 2,
             "user_id": "356",
-            "zip": "34003",
+            "postal_code": "34003",
             "country": "USA",
             "state": "Texas",
             "city": "Dallas",
-            "address": "20 town avenue",
+            "address_1": "20 town avenue",
             "is_default": "false",
             "status": "active",
             "deleted_at": null,
@@ -177,11 +177,11 @@ This endpoint returns the details of the specified mailing address.
     "data": {
         "id": 2,
         "user_id": "356",
-        "zip": "34003",
+        "postal_code": "34003",
         "country": "USA",
         "state": "Texas",
         "city": "Dallas",
-        "address": "20 town avenue",
+        "address_1": "20 town avenue",
         "is_default": "false",
         "status": "active",
         "deleted_at": null,
@@ -216,11 +216,11 @@ This endpoint sets the specified address as default.
     "data": {
         "id": 2,
         "user_id": "356",
-        "zip": "34003",
+        "postal_code": "34003",
         "country": "USA",
         "state": "Texas",
         "city": "Dallas",
-        "address": "20 town avenue",
+        "address_1": "20 town avenue",
         "is_default": "true",
         "status": "active",
         "deleted_at": null,
