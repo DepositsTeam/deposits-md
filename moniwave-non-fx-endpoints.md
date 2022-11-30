@@ -4,7 +4,7 @@ Please note that;
 
 1. Each of the endpoint below is a `POST` request.
 2. The endpoints needs the `api_key` and `user_id` as part of the request body.
-3. `{account_id}` is sent as the last segment of the URL.
+3. `{account_id}` or `{transaction_id}` is sent as the last segment of the URL depending on the endpoint.
 4. The `BaseURL` is the url that gives access to our APIs.
 
 Deposits Base URL in sandbox
@@ -677,3 +677,188 @@ This endpoint verifies a bank account via micro deposits, some funds was sent to
 }
 
 ```
+
+
+## Get Transactions
+
+This endpoint retrieves the transactions performed by a user.
+
+##### Endpoint
+
+```
+{{BaseURL}}/user/get-transactions
+```
+
+##### Parameters
+
+```
+{
+    user_id:963
+    api_key:cafecito-user
+}
+```
+
+##### Response
+
+```
+{
+    "status": "success",
+    "message": "Wallet retrived",
+    "data": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 2774,
+                "email": "jeremiah@deposits.com",
+                "type": "debit",
+                "transaction_id": "19c6063bc6944fbc7690",
+                "value": "0.00",
+                "balance": "0.00",
+                "description": "flex",
+                "status": "completed",
+                "currency": "usd",
+                "reference": "19c6063bc6944fbc7690",
+                "created_at": "2022-01-18T12:48:14.000000Z"
+            },
+            {
+                "id": 2772,
+                "email": "jeremiah@deposits.com",
+                "type": "debit",
+                "transaction_id": "6f175c9dc068bc5b3964",
+                "value": "0.00",
+                "balance": "0.00",
+                "description": "flex",
+                "status": "completed",
+                "currency": "usd",
+                "reference": "6f175c9dc068bc5b3964",
+                "created_at": "2022-01-18T12:48:10.000000Z"
+            },
+            {
+                "id": 2770,
+                "email": "jeremiah@deposits.com",
+                "type": "debit",
+                "transaction_id": "654f96c93b0d48929876",
+                "value": "0.00",
+                "balance": "0.00",
+                "description": "flex",
+                "status": "completed",
+                "currency": "usd",
+                "reference": "654f96c93b0d48929876",
+                "created_at": "2022-01-18T12:39:30.000000Z"
+            }
+        ],
+        "first_page_url": "http://api.swys.test/api/v1/user/get-transactions?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://api.swys.test/api/v1/user/get-transactions?page=1",
+        "next_page_url": null,
+        "path": "http://api.swys.test/api/v1/user/get-transactions",
+        "per_page": 10,
+        "prev_page_url": null,
+        "to": 3,
+        "total": 3
+    }
+}
+```
+
+
+## Get a Transaction
+
+This endpoint retrieves the details of a transaction.
+
+##### Endpoint
+
+```
+{{BaseURL}}/user/get-transaction/{transaction_id}
+```
+
+##### Parameters
+
+```
+{
+    user_id:963
+    api_key:cafecito-user
+}
+```
+
+##### Response
+```
+{
+    "status": "success",
+    "message": "retrieved",
+    "data": {
+        "id": 2950,
+        "email": "jeremiah@deposits.com",
+        "type": "credit",
+        "transaction_id": "14476589",
+        "beneficiary_name": "Oniwan Nado",
+        "beneficiary_email": "jeremiah@deposits.com",
+        "value": "120.00",
+        "balance": "7.00",
+        "description": "Wallet topup",
+        "status": "completed",
+        "currency": "usd",
+        "reference": "905",
+        "created_at": "2022-02-25T14:00:03.000000Z"
+    }
+}
+```
+
+
+## Withdraw to unsaved account
+
+This endpoint allows the user withdraw to an unsaved account.
+
+##### Endpoint
+
+```
+{{BaseURL}}/user/withdraw-to-account
+```
+
+##### Parameters
+
+```
+{
+    user_id:963
+    api_key:cafecito-user
+    amount:0.4
+    account_name:jine deli
+    account_number:212121221
+    account_bank:GS bank
+    routing_number:4883488433
+}
+```
+
+##### Response
+```
+{
+    "status": "success",
+    "message": "Transfer successful ",
+    "data": {
+        "id": 524,
+        "user_id": "3",
+        "email": "calmpress@gmail.com",
+        "type": "withdrawal",
+        "currency": "usd",
+        "to_currency": null,
+        "amount": "1",
+        "description": "funds transfer to account",
+        "transaction_id": "13e9f",
+        "time_completed": null,
+        "account_funded": null,
+        "account_name": "jine deli",
+        "account_number": "eyJpdiI6Inl3MHYrSzlHdk5zZXB5dnFHNmVDV0E9PSIsInZhbHVlIjoidVV4RXd3VjZqSjVKc2ErYkFjZ3lhMXJab2NsbDNMRG9PUGRMYnpjaWh2TT0iLCJtYWMiOiIzNWFlMWViZGRlNWUwOWMyZDBhODBiNzYxNjI3ZDZmZGYzNmYxNDYwZWE4MDU0NzhjZGJhMzNjN2YyMjRkZTZiIn0=",
+        "account_id": "",
+        "extra": null,
+        "bank": "GS bank",
+        "routing_number": "eyJpdiI6IlZKaGJWeVRjZkR4R0liRTNQSWhpMEE9PSIsInZhbHVlIjoiWm1LdjNkVDFaK0tTL21ZVlBlenVmbXRqNUJUaGhsK2JZekIweGVNY2tUVT0iLCJtYWMiOiJkZjEwN2VlYzlmNjA4ZDMwOTdiYTc2YTI4Yzg4ZDMzMTMxZDlhYjg2NDEzMDBhMjU5N2I2YWQ5OWVkMTU1OTk5In0=",
+        "status": "pending",
+        "deleted": null,
+        "created_at": "2021-05-04T21:22:14.000000Z",
+        "updated_at": "2021-05-04T21:22:14.000000Z"
+    }
+}
+
+```
+
+
