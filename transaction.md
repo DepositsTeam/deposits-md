@@ -10,7 +10,7 @@ https://api.deposits.dev/api/v1/
 Deposits Base URL in production
 
 ```sh
-https://api.deposits.com/api/v1/
+https://api.ondeposits.com/api/v1/
 ```
 
 1. Each of the endpoint below is a `POST` request

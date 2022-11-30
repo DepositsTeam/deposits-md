@@ -6,7 +6,7 @@ The Deposits One-Click Checkout SDK allows merchants to quickly enroll, onboard,
 
   
 
-![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner-js.png)
+![deposits-one-click-checkout-flutter_cover](https://assets.ondeposits.com/img/checkout/sdk-banner-js.png)
 
   
 
@@ -27,13 +27,13 @@ https://api.deposits.dev/example/checkout-reference-business
 ```
 Example in production
 ```sh
-https://api.deposits.com/example/checkout
+https://api.ondeposits.com/example/checkout
 ```
 ```sh
-https://api.deposits.com/example/checkout-reference
+https://api.ondeposits.com/example/checkout-reference
 ```
 ```sh
-https://api.deposits.com/example/checkout-reference-business
+https://api.ondeposits.com/example/checkout-reference-business
 ```
 
 #### How to use
@@ -46,9 +46,9 @@ https://api.deposits.dev/sdk/checkout.js
 ```
 SDK Url and JS Import in production
 ```sh
-https://api.deposits.com/sdk/checkout.js
+https://api.ondeposits.com/sdk/checkout.js
 
-<script src="https://api.deposits.com/sdk/checkout.js"></script>
+<script src="https://api.ondeposits.com/sdk/checkout.js"></script>
 ```
 
 The second line of code imports our SDK to your web page. With this, you can call the appropriate function to initiate the Deposits checkout flow.
@@ -76,7 +76,7 @@ Below is what an implementation of the `DepositsCheckout` would look like:
       Initiate Checkout
     </button>
   </form>
-  <script src=“https://api.deposits.com/sdk/checkout.js”></script>
+  <script src=“https://api.ondeposits.com/sdk/checkout.js”></script>
   <script>
     document.getElementById(“form”).addEventListener(“submit”, function (e) {
       e.preventDefault();

@@ -11,8 +11,8 @@ Please note that;
 
 | Environment | Console URL | Base URLs |
 | --- | --- | --- |
-| Sandbox | https://console.deposits.dev/client-admin/login | https://staging.api.deposits.com/api/v1/ |
-| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v1/ |
+| Sandbox | https://sandbox.launch.new/client-admin/login | https://staging.api.ondeposits.com/api/v1/ |
+| Production | https://launch.new/client-admin/login | https://api.ondeposits.com/api/v1/ |
 
 
 ## Create a card

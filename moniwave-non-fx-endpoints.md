@@ -16,7 +16,7 @@ https://api.deposits.dev/api/v2/
 Deposits Base URL in production
 
 ```sh
-https://api.deposits.com/api/v2/
+https://api.ondeposits.com/api/v2/
 ```
 
 ## transfer funds

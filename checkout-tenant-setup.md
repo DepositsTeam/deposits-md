@@ -12,11 +12,11 @@ You have to first create an account on our console, we advise you do so on our s
 
 Deposits Console URL in sandbox
 ```sh
-https://console.deposits.dev/client-admin/login
+https://sandbox.launch.new/client-admin/login
 ```
-DepositsConsole URL in production
+Deposits Console URL in production
 ```sh
-https://console.deposits.com/client-admin/login
+https://launch.new/client-admin/login
 ```
 
 ##### First steps in the console
@@ -33,7 +33,7 @@ https://api.deposits.dev/api/v1
 ```
 Deposits API URL in Production
 ```sh
-https://api.deposits.com/api/v1
+https://api.ondeposits.com/api/v1
 ```
 
 With our API you would have access to create users, add ACH and Wire accounts, withdraw funds and more, below is the URL to our Documentation and a static link to our Postman collection, kindly import it to your Postman app or on their website.
@@ -48,7 +48,7 @@ https://www.getpostman.com/collections/e67c7ba863f80797ba4d
 
 #### Javascript SDK Resources
 
-![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner-js.png)
+![deposits-one-click-checkout-flutter_cover](https://assets.ondeposits.com/img/checkout/sdk-banner-js.png)
 
 To use our Javascript SDK kindly go through this link.
 ```sh
@@ -68,17 +68,17 @@ https://api.deposits.dev/example/checkout-reference-business
 ```
 Production
 ```sh
-https://api.deposits.com/example/checkout
+https://api.ondeposits.com/example/checkout
 ```
 ```sh
-https://api.deposits.com/example/checkout-reference
+https://api.ondeposits.com/example/checkout-reference
 ```
 ```sh
-https://api.deposits.com/example/checkout-reference-business
+https://api.ondeposits.com/example/checkout-reference-business
 ```
 #### Flutter SDK Resources
 
-![deposits-one-click-checkout-flutter_cover](https://assets.deposits.com/img/checkout/sdk-banner.png)
+![deposits-one-click-checkout-flutter_cover](https://assets.ondeposits.com/img/checkout/sdk-banner.png)
 
 To use our Flutter SDK listed below are some links to places where the code base is hosted.
 

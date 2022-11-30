@@ -11,7 +11,7 @@ You can access our APIs from the base URLs depending on the stage of development
 | Environment | Console URL | Base URLs |
 | --- | --- | --- |
 | Sandbox | https://console.deposits.dev/client-admin/login | https://api.deposits.dev/api/v2/ |
-| Production | https://console.deposits.com/client-admin/login | https://api.deposits.com/api/v2/ |
+| Production | https://console.ondeposits.com/client-admin/login | https://api.ondeposits.com/api/v2/ |
 
 ## Creating a Client
 To setup your account,
@@ -35,6 +35,6 @@ To issue cards and perform other card operations, you can find the documentation
 
 # References
 - [Deposits Staging Console](https://console.deposits.dev)
-- [Deposits Production Console](https://console.deposits.com)
+- [Deposits Production Console](https://launch.new)
 - [Deposits API Architecture and Resource Structure](https://docs.deposits.dev/#api-architecture-and-resource-structure)
 - [Deposits API Reference](https://docs.deposits.dev)

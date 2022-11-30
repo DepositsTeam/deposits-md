@@ -28,7 +28,7 @@ Below is what an implementation of the new `DepositsCheckout` would look like:
       Initiate Checkout
     </button>
   </form>
-  <script src=“https://api.deposits.com/sdk/checkout.js”></script>
+  <script src=“https://api.ondeposits.com/sdk/checkout.js”></script>
   <script>
     document.getElementById(“form”).addEventListener(“submit”, function (e) {
       e.preventDefault();
