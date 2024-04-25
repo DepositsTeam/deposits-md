@@ -17,7 +17,7 @@ https://api.ondeposits.com
 When one needs to a user in Astra you have to call the deposits API in the format below and ensure you pass the right entity_type and the right entity_id and the URL has to be opened in a webview.
 
 ```sh
-{baseUrl}/api/v2/connect/astra-authorize-user/{type}/{type_id}
+{baseUrl}/connect/astra-authorize-user/{type}/{type_id}
 ```
 
 ```sh
