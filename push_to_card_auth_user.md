@@ -30,4 +30,5 @@ When one needs to a user in Astra you have to call the deposits API in the forma
 
 The User will be created in astra and the USER_ID saved in deposits, depending on if the process was successful you would see a success response on the screen or details of the error encountered, the modal should be closed manually.
 
+Note: Listen for the closePage event on the frontend and close the iframe when received
 

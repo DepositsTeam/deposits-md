@@ -30,4 +30,4 @@ When the add card button is clicked or on your add card screen you have to call 
 
 The card entered here will be saved in deposits for that entity, depending on if the process was successful you would see a success response on the screen or details of the error encountered, the modal should be closed manually.
 
-
+Note: Listen for the closePage event on the frontend and close the iframe when received
