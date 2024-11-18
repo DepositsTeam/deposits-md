@@ -1,6 +1,6 @@
-# Deposits Save Card UI
+# Deposits Payout Save Card UI
 
-## _How to implement save card UI on web/mobile 
+## _How to implement save card UI on web/mobile for cards that funds are pushed to
 
 
 baseUrl for the Deposits API in sandbox
